@@ -1,50 +1,36 @@
-# Development
+# example-crud
 
-Your new bare-bones project includes minimal organization with a single `main.rs` file and a few assets.
+A simple CRUD application built with Rust and Dioxus.
 
-```
-project/
-├─ assets/ # Any assets that are used by the app should be placed here
-├─ src/
-│  ├─ main.rs # main.rs is the entry point to your application and currently contains all components for the app
-├─ Cargo.toml # The Cargo.toml file defines the dependencies and feature flags for your project
-```
+## Features
 
-### Automatic Tailwind (Dioxus 0.7+)
+*   View a list of todos.
+*   Create, edit, and delete todos.
 
-As of Dioxus 0.7, there no longer is a need to manually install tailwind. Simply `dx serve` and you're good to go!
+## Technologies Used
 
-Automatic tailwind is supported by checking for a file called `tailwind.css` in your app's manifest directory (next to Cargo.toml). To customize the file, use the dioxus.toml:
+*   [Rust](https://www.rust-lang.org/)
+*   [Dioxus](https://dioxuslabs.com/)
+*   [Tailwind CSS](https://tailwindcss.com/)
 
-```toml
-[application]
-tailwind_input = "my.css"
-tailwind_output = "assets/out.css" # also customize the location of the out file!
-```
+## Getting Started
 
-### Tailwind Manual Install
+1.  **Clone the repository:**
 
-To use tailwind plugins or manually customize tailwind, you can can install the Tailwind CLI and use it directly.
+    ```bash
+    git clone https://github.com/MamangRust/example-crud.git
+    ```
 
-### Tailwind
-1. Install npm: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-2. Install the Tailwind CSS CLI: https://tailwindcss.com/docs/installation/tailwind-cli
-3. Run the following command in the root of the project to start the Tailwind CSS compiler:
+2.  **Navigate to the project directory:**
 
-```bash
-npx @tailwindcss/cli -i ./input.css -o ./assets/tailwind.css --watch
-```
+    ```bash
+    cd example-crud
+    ```
 
-### Serving Your App
+3.  **Run the application:**
 
-Run the following command in the root of your project to start developing with the default platform:
+    ```bash
+    dioxus serve
+    ```
 
-```bash
-dx serve
-```
-
-To run for a different platform, use the `--platform platform` flag. E.g.
-```bash
-dx serve --platform desktop
-```
-
+4.  **Open your browser and navigate to `http://localhost:8080`**
