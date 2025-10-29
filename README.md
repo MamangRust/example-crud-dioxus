@@ -18,7 +18,7 @@ A simple CRUD application built with Rust and Dioxus.
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/MamangRust/example-crud.git
+    git clone https://github.com/MamangRust/example-crud-dioxus.git
     ```
 
 2.  **Navigate to the project directory:**
